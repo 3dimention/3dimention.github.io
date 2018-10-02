@@ -1,0 +1,76 @@
+{
+  "name": "nahuelio.github.io",
+  "version": "1.0.0",
+  "description": "Nahuel.IO Home Page",
+  "main": "runner.ts",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "cross-env profile=dev ts-node build/rollup.ts",
+    "test": "cross-env profile=test ts-node  build/rollup.ts",
+    "prod": "cross-env profile=prod ts-node  build/rollup.ts",
+    "deploy": "cross-env profile=deploy ts-node  build/rollup.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nahuelio/nahuelio.github.io.git"
+  },
+  "keywords": [
+    "nahuelio",
+    "homepage",
+    "portfolio"
+  ],
+  "author": "Patricio Ferreira <3dimentionar@gmail.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/nahuelio/nahuelio.github.io/issues"
+  },
+  "homepage": "https://github.com/nahuelio/nahuelio.github.io#readme",
+  "configuration": {
+    "basePath": "./src",
+    "output": {
+      "publicPath": "./docs",
+      "format": "system"
+    },
+    "input": [
+      "**/*-page.tsx",
+      "**/*-bundle.ts",
+      "systemjs.config.ts"
+    ],
+    "plugins": {
+      "resolve": {
+        "jsnext": true,
+        "main": true
+      },
+      "commonjs": {
+        "extensions": [".js", ".ts", ".json", ".css"],
+        "include": ["node_modules/**"]
+      }
+    }
+  },
+  "dependencies": {
+    "bootstrap": "4.1.3",
+    "jquery": "3.3.1",
+    "lodash": "4.17.11",
+    "popper.js": "1.14.4",
+    "react": "16.5.2",
+    "react-dom": "16.5.2",
+    "systemjs": "2.0.0",
+    "tachyons": "4.11.1"
+  },
+  "devDependencies": {
+    "@types/lodash": "4.14.116",
+    "@types/rollup": "0.54.0",
+    "argv": "0.0.2",
+    "cross-env": "5.2.0",
+    "express": "4.16.3",
+    "fast-glob": "2.2.2",
+    "less": "3.8.1",
+    "rollup": "0.66.2",
+    "rollup-plugin-commonjs": "9.1.8",
+    "rollup-plugin-node-resolve": "3.4.0",
+    "ts-node": "7.0.1",
+    "typescript": "3.1.1"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "lib": ["Es5", "Dom", "ScriptHost", "Es2015"],
+    "jsx": "react",
+    "rootDir": "./src",
+    "removeComments": true,
+    "noEmit": true,
+    "strict": false,
+    "noImplicitAny": false,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    "moduleResolution": "node",
+	"allowSyntheticDefaultImports": true,
+    "baseUrl": "./src",
+    "paths": {},
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  }
+}
