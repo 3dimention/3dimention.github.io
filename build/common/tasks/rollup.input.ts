@@ -4,8 +4,8 @@
  */
 import _ from 'lodash';
 import fg from 'fast-glob';
+import { Configuration } from '../rollup.argv';
 
-export default async (input: string) => {
-	console.log(input);
-	return input;
+export default (configuration: Configuration) => {
+	return fg.sync(configuration.input, { cwd: configuration.basePath });
 };
