@@ -3,10 +3,17 @@
  * @author Patricio Ferreira <3dimentionar@gmail.com>
  */
 import { resolve } from 'path';
-import { Project, Configuration } from '../rollup.argv';
+import * as fs from 'fs-extra';
+import { each } from 'lodash';
+import { Project } from '../rollup.argv';
 
-export default async(configuration: any, project: Project) => {
+const clean = (out: any) => {
+	if(fs.pathExistsSync(out.file))
+		fs.removeSync(out.file);
+};
+
+export default (configuration: any, project: Project) => {
 	const { params } = project.environment;
-	console.log(params);
+	if (params.clean) each(configuration.output, clean);
 	return true;
 };

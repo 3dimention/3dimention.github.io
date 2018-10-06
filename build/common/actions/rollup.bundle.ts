@@ -7,7 +7,7 @@ import { Project } from '../rollup.argv';
 import RollupClean from './rollup.clean';
 
 export default async(configuration: any, project: Project) => {
-	await RollupClean(configuration, project);
-	console.log('Rollup Bundle on: ', configuration);
+	RollupClean(configuration, project);
+	// return await rollup.rollup(configuration);
 	return {};
 };

@@ -21,7 +21,7 @@ const tasks = {
  */
 const taskExecutor = (project: Project, input: string, memo: object, task: string) => {
 	const { options } = project.configuration;
-	extend(memo, { [task]: tasks[task](project, input) }, { ...options });
+	extend(memo, { [task]: tasks[task](project, input, memo) }, { ...options });
 	return memo;
 };
 
