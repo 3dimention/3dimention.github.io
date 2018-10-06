@@ -26,11 +26,12 @@ export interface Environment {
 };
 
 export interface Configuration {
+	[name: string]: any;
 	cwd: string;
 	basePath: string;
 	input: string|string[];
-	output: OutputOptions;
-	plugins: string[]
+	output: any;
+	plugins: any|any[]
 };
 
 export interface Project {

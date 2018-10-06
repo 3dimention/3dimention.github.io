@@ -2,10 +2,20 @@
  * Rollup Input
  * @author Patricio Ferreira <3dimentionar@gmail.com>
  */
-import _ from 'lodash';
+import { normalize } from 'path';
 import fg from 'fast-glob';
-import { Configuration } from '../rollup.argv';
+import { map } from 'lodash';
+import { Project } from '../rollup.argv';
 
-export default (configuration: Configuration) => {
-	return fg.sync(configuration.input, { cwd: configuration.basePath });
+const normalizeInput = (input: string) => {
+	return normalize(input);
+};
+
+export default (project: Project) => {
+	const { configuration } = project;
+	return map(fg.sync(configuration.input, {
+		cwd: configuration.basePath,
+		onlyFiles: true,
+		absolute: true
+	}), normalize);
 };

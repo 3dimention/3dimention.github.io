@@ -2,10 +2,18 @@
  * Common Rollup Configuration across environments
  * @author Patricio Ferreira <3dimentionar@gmail.com>
  */
-import project from './common/rollup.argv';
+import { each } from 'lodash';
+import project, { Configuration } from './common/rollup.argv';
 import common from './common/rollup.common';
+
+const env: string = project.environment.profile;
+const RollupEnv = require(`./${env}/rollup`).default;
+
+const execute = async(configuration: Configuration) => {
+	return await RollupEnv(configuration, project);
+};
 
 export default (async() => {
 	const configurations = await common(project);
-	console.log(configurations);
+	each(configurations, execute);
 })();
