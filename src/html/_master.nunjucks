@@ -1,0 +1,5 @@
+<!DOCTTYPE html>
+<html>
+	<head>{% include "_head.nunjucks" %}</head>
+	<body>{% include "_body.nunjucks" %}</body>
+</html>

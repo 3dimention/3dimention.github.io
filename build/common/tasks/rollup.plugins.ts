@@ -17,7 +17,7 @@ const supported = {
 	nodeResolve: require('rollup-plugin-node-resolve'),
 	less: require('rollup-plugin-less'),
 	postcss: require('rollup-plugin-postcss'),
-	nunjucks: require('../plugins/rollup-plugin-nunjucks').default
+	nunjucks: require('../plugins/rollup-plugin-nunjucks')
 };
 
 const getOptionsForEnv = (plugin: string, options: any, process: ProcessPlugin) => {

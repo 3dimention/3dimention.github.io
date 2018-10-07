@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'tachyons';
 
 // Javascript
+import 'systemjs';
 import 'lodash';
 import 'jquery';
 import 'popper.js';

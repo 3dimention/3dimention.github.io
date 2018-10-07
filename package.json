@@ -61,11 +61,7 @@
         ],
         "include": [
           "node_modules/**"
-        ],
-        "namedExports": {
-          "node_modules/tachyons/css/tachyons.min.css": "tachyons",
-          "node_modules/bootstrap/dist/css/bootstrap.min.css": "bootstrap-css"
-        }
+        ]
       },
       "less": {
         "insert": true,
@@ -78,10 +74,12 @@
         "sourceMap": true
       },
       "nunjucks": {
-        "templates": "./html",
+        "templates": "./src/html",
+        "outputDir": "./docs",
         "generateOn": [
-          "-page.tsx"
-        ]
+          "-page.js"
+        ],
+        "options": {}
       }
     },
     "options": {
