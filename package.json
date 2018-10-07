@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "debug": "nodemon -e ts --watch ./build --exec \"npm run dev -- -c\"",
+    "debug": "nodemon -e ts --watch ./build --exec \"npm run dev -- -s -c\"",
     "dev": "cross-env profile=dev ts-node build/rollup.ts",
     "test": "cross-env profile=test ts-node build/rollup.ts",
     "prod": "cross-env profile=prod ts-node build/rollup.ts",
@@ -44,24 +44,45 @@
     "plugins": {
       "nodeResolve": {
         "jsnext": true,
-        "extensions": [".mjs", ".js", ".css", ".json", ".node"]
+        "browser": true,
+        "extensions": [
+          ".mjs",
+          ".js",
+          ".css",
+          ".json",
+          ".node"
+        ]
       },
       "commonjs": {
         "extensions": [
           ".js",
           ".ts",
-          ".json",
-          ".css"
+          ".json"
         ],
         "include": [
           "node_modules/**"
-        ]
+        ],
+        "namedExports": {
+          "node_modules/tachyons/css/tachyons.min.css": "tachyons",
+          "node_modules/bootstrap/dist/css/bootstrap.min.css": "bootstrap-css"
+        }
       },
       "less": {
         "insert": true,
-        "include": ["./src/styles/*.less", "./src/styles/**/*.less"]
+        "include": [
+          "./src/styles/*.less",
+          "./src/styles/**/*.less"
+        ]
       },
-      "nunjucks": {}
+      "postcss": {
+        "sourceMap": true
+      },
+      "nunjucks": {
+        "templates": "./html",
+        "generateOn": [
+          "-page.tsx"
+        ]
+      }
     },
     "options": {
       "experimentalCodeSplitting": true
@@ -78,8 +99,9 @@
     "tachyons": "4.11.1"
   },
   "devDependencies": {
+    "@types/fs-extra": "5.0.4",
     "@types/lodash": "4.14.116",
-    "@types/rollup": "0.54.0",
+    "@types/nunjucks": "3.1.0",
     "argv": "0.0.2",
     "cross-env": "5.2.0",
     "express": "4.16.3",
@@ -92,6 +114,7 @@
     "rollup-plugin-commonjs": "9.1.8",
     "rollup-plugin-less": "0.1.4",
     "rollup-plugin-node-resolve": "3.4.0",
+    "rollup-plugin-postcss": "1.6.2",
     "ts-node": "7.0.1",
     "typescript": "3.1.1"
   }

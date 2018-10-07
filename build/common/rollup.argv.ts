@@ -17,6 +17,13 @@ const args = argv.option([
 		name: 'clean',
 		short: 'c',
 		type: 'boolean'
+	},
+	{
+		description: 'Skip Libraries Bundle',
+		example: 'npm run dev -- -s',
+		name: 'skipLibs',
+		short: 's',
+		type: 'boolean'
 	}
 ]).run();
 

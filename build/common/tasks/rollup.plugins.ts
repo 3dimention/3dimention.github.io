@@ -16,6 +16,7 @@ const supported = {
 	commonjs: require('rollup-plugin-commonjs'),
 	nodeResolve: require('rollup-plugin-node-resolve'),
 	less: require('rollup-plugin-less'),
+	postcss: require('rollup-plugin-postcss'),
 	nunjucks: require('../plugins/rollup-plugin-nunjucks').default
 };
 

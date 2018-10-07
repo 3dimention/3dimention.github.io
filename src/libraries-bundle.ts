@@ -3,10 +3,11 @@
  * @author Patricio Ferreira <3dimentionar@gmail.com>
  */
 // Styles
-import 'bootstrap-css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import 'tachyons';
 
 // Javascript
+import 'lodash';
 import 'jquery';
 import 'popper.js';
 import 'bootstrap';

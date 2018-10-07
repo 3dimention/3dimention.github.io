@@ -5,7 +5,7 @@
 import { resolve } from 'path';
 import * as fs from 'fs-extra';
 import { extend, reduce, replace } from 'lodash';
-import nunjucks from 'nunjucks';
+import * as nunjucks from 'nunjucks';
 import { Project } from '../rollup.argv';
 
 export interface NunjucksOptions {
@@ -16,17 +16,11 @@ export interface NunjucksOptions {
 
 export default (options: NunjucksOptions) => {
 	return {
-		name: 'templates',
+		name: 'nunjucks',
 		generateBundle(outputOptions, bundle, isWrite) {
 			if(isWrite) {
-				console.log('Nunjucks: ', bundle);
-			}
-		},
-		buildEnd(error) {
-			if(!error) {
 				console.log(options);
-			} else {
-				console.log(error);
+				console.log('Nunjucks generate: ', outputOptions);
 			}
 		}
 	};
