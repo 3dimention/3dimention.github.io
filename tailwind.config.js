@@ -23,12 +23,14 @@ export default {
 				focus: '#3a18db',
 				hover: '#411cff',
 				active: '#b8a9fa',
+				disabled: '#c5c5c5'
 			},
 			secondary: {
 				normal: '#b73adf',
 				focus: '#b73adf',
 				hover: '#d342ff',
-				active: '#e7c3f3'
+				active: '#e7c3f3',
+				disabled: '#c5c5c5'
 			},
 			success: '#26ba12',
 			info: '#efd34b',

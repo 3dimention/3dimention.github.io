@@ -1,5 +1,5 @@
 <script>
-	import '../static/css/main.css';
+	import '$lib/theme/main.css';
 </script>
 
 <main>
