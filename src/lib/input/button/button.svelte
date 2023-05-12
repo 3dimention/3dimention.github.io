@@ -9,7 +9,14 @@
 
 	import { Color, Size } from '$lib/theme/theme';
 	import Icon from '$lib/component/icon/icon.svelte';
-	import { backgroundColor, hoverColor, textColorByBgColor, padding, fontSize, iconPadding } from '$lib/input/button/button';
+	import {
+		backgroundColor,
+		hoverColor,
+		textColorByBgColor,
+		padding,
+		fontSize,
+		iconPadding
+	} from '$lib/input/button/button';
 
 	export let label = 'Label';
 	export let name = '';
@@ -17,25 +24,24 @@
 	export let color: Color = Color.primary;
 	export let size: Exclude<Sizes, 'lg' | 'xl'> = 'sm';
 	export let spacing: Size = Size.sm;
-	export let disabled: boolean = false;
+	export let disabled = false;
 	export let icon: ComponentType<Icon> | null = null;
 	export let iconAlignment: Extract<Alignments, 'left' | 'right'> = 'left';
 	export let onClick: MouseEventHandler<EventTarget> = () => void 0;
 
 	const baseClasses = `inline-flex flex-row items-center rounded-full py-xs ${className}`.trim();
-	const bgc = backgroundColor(color, disabled), hvc = hoverColor(color, disabled), tc = textColorByBgColor(color),
-		fs = fontSize(size), p = padding(spacing), ip = icon ? iconPadding(iconAlignment, spacing) : null;
-	console.log(bgc);
+	const bgc = backgroundColor(color, disabled),
+		hvc = hoverColor(color, disabled),
+		tc = textColorByBgColor(color),
+		fs = fontSize(size),
+		p = padding(spacing),
+		ip = icon ? iconPadding(iconAlignment, spacing) : null;
 </script>
 
-<button aria-disabled={disabled.toString()}
-    {disabled}
-    class="{baseClasses} {bgc} {tc} {hvc} {p} {fs}"
-    name={name}
-    on:click={onClick}>
-	{#if (icon && iconAlignment === 'left')}<Icon {icon} color={tc} size={size} />{/if}
-	<span class="{ip}">{label}</span>
-	{#if (icon && iconAlignment === 'right')}<Icon {icon} color={tc} size={size} />{/if}
+<button aria-disabled={disabled} {disabled} class="{baseClasses} {bgc} {tc} {hvc} {p} {fs}" {name} on:click={onClick}>
+	{#if icon && iconAlignment === 'left'}<Icon {icon} color={tc} {size} />{/if}
+	<span class={ip}>{label}</span>
+	{#if icon && iconAlignment === 'right'}<Icon {icon} color={tc} {size} />{/if}
 </button>
 
 <style>

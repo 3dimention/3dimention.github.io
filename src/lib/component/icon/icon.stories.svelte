@@ -5,15 +5,12 @@
 	import { Color, Size } from '$lib/theme/theme';
 </script>
 
-<Meta title='Components/Icon'
-	component={Icon}
-	parameters={{ layout: 'centered' }}
-	args={{ icon: defaultIcon }} />
+<Meta title="Components/Icon" component={Icon} parameters={{ layout: 'centered' }} args={{ icon: defaultIcon }} />
 
 <Template let:args>
 	<Icon {...args} />
 </Template>
 
-<Story name='Default' />
-<Story name='With Color' args={{ color: Color.primary }} />
-<Story name='With Size' args={{ icon: FaSearch, size: Size.lg }} />
+<Story name="Default" />
+<Story name="With Color" args={{ color: Color.primary }} />
+<Story name="With Size" args={{ icon: FaSearch, size: Size.lg }} />

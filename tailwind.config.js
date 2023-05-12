@@ -3,7 +3,7 @@ import * as defaultTheme from 'tailwindcss/defaultTheme';
 /** @type {import('tailwindcss').Config} */
 export default {
 	mode: 'jit',
-	content: ['./src/**/*.{html,mdx,js,ts,svelte}'],
+	content: ['./src/**/*.{html,mdx,ts,tsx,svelte}'],
 	darkMode: 'class',
 	theme: {
 		...defaultTheme,
@@ -37,7 +37,7 @@ export default {
 			warning: '#e27429',
 			error: '#e62222',
 			black: '#000',
-			white: '#fff',
+			white: '#fff'
 		},
 		fontFamily: {
 			...defaultTheme.fontFamily,

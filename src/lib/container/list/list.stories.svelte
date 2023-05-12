@@ -6,34 +6,38 @@
 	import { mockListElements } from './list.mocks';
 	import { ListStyle } from '$lib/theme/theme';
 
-	type CustomElement = MockListElement & { output: string };
-	const customTransform: ListTransform<CustomElement, MockListElement> = (
+	type ResultElement = MockListElement & { output: string };
+	const customTransform: ListTransform<ResultElement, MockListElement> = (
 		value: MockListElement,
 		index: number,
 		{ first, last }: ListOptions<MockListElement>
 	) => {
-		return { ...value, output: `${value.name} ${(!first && !last) ? value.id : ''}`.trim() };
+		return { ...value, output: `${value.name} ${!first && !last ? value.id : ''}`.trim() };
 	};
 </script>
 
-<Meta title='Containers/List'
+<Meta
+	title="Containers/List"
 	component={List}
 	parameters={{ layout: 'centered' }}
-	args={{ elements: mockListElements }} />
+	args={{ elements: mockListElements }}
+/>
 
 <Template let:args>
 	<List {...args} />
 </Template>
 
-<Story name='Default' />
-<Story name='Disc' args={{ style: ListStyle.disc, className: 'inline-block' }} />
-<Story name='Decimal' args={{ style: ListStyle.decimal }} />
-<Story name='Custom'>
-	<List style={ListStyle.none}
-	      elements={mockListElements}
-	      className='inline-flex flex-col items-center'
-	      transform={customTransform}
-	      let:element={element}>
+<Story name="Default" />
+<Story name="Disc" args={{ style: ListStyle.disc, className: 'inline-block' }} />
+<Story name="Decimal" args={{ style: ListStyle.decimal }} />
+<Story name="Custom">
+	<List
+		style={ListStyle.none}
+		elements={mockListElements}
+		className="inline-flex flex-col items-center"
+		transform={customTransform}
+		let:element
+	>
 		<li data-testId={element.id}>{element.output}</li>
 	</List>
 </Story>

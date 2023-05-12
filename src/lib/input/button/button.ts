@@ -5,7 +5,9 @@ import { isColorState } from '$lib/helper/color.helper';
 
 export const backgroundColor = (color: Colors, disabled: boolean): string => {
 	const value = BackgroundColors[color];
-	return (isColorState(value) ? (disabled ? value.disabled : value.normal) : value) || BackgroundColors.primary.normal;
+	return (
+		(isColorState(value) ? (disabled ? value.disabled : value.normal) : value) || BackgroundColors.primary.normal
+	);
 };
 
 export const hoverColor = (color: Colors, disabled: boolean): string => {

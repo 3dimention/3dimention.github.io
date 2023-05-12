@@ -41,7 +41,6 @@
 .content .contact h5 {
 	margin: 0;
 	color: #c1c1c1;
-
 }
 
 img.github,
@@ -53,7 +52,9 @@ img.twitter {
 	opacity: 0.3;
 }
 
-a { text-decoration: none; }
+a {
+	text-decoration: none;
+}
 
 .footer {
 	position: absolute;
@@ -73,6 +74,6 @@ a { text-decoration: none; }
 }
 
 .bg-2 {
-	background: radial-gradient(circle at top, #882b7a , #080f45)
+	background: radial-gradient(circle at top, #882b7a, #080f45);
 	/*background: radial-gradient(circle at top, #871d70 , #071a40)*/
 }

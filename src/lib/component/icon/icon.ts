@@ -8,6 +8,6 @@ export const textColor = (color: Colors | string): string => {
 	return (isColorState(value) ? value.normal : value) || TextColors.black;
 };
 
-export const width = (size: Sizes): string => (size !== Size.xs && Width[size]) || Width[Size.md];
+export const width = (size: Sizes): string => Width[size] || Width[Size.md];
 
-export const height = (size: Sizes): string => (size !== Size.xs && Height[size]) || Height[Size.md];
+export const height = (size: Sizes): string => Height[size] || Height[Size.md];
