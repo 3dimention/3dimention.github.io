@@ -41,7 +41,7 @@ export default {
 		},
 		fontFamily: {
 			...defaultTheme.fontFamily,
-			sans: ['Montserrat', ...defaultTheme.fontFamily.sans]
+			sans: ['Instrument Sans', ...defaultTheme.fontFamily.sans]
 		},
 		spacing: {
 			...defaultTheme.spacing,

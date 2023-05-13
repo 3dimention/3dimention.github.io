@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="64"
+   height="64"
+   viewBox="0 0 64 64"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="nahuelio-logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="false"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="false"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     shape-rendering="auto"
+     inkscape:lockguides="false"
+     inkscape:zoom="2.3786088"
+     inkscape:cx="1045.5692"
+     inkscape:cy="723.95259"
+     inkscape:window-width="3053"
+     inkscape:window-height="1976"
+     inkscape:window-x="175"
+     inkscape:window-y="69"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="IO">
+      <stop
+         style="stop-color:#5bc919;stop-opacity:1;"
+         offset="0"
+         id="stop1907" />
+      <stop
+         style="stop-color:#cce400;stop-opacity:1;"
+         offset="1"
+         id="stop1909" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#IO"
+       id="linearGradient1913"
+       x1="731.40967"
+       y1="528.37109"
+       x2="731.40967"
+       y2="470.21112"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-2.6068534,-3.6496429)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#IO"
+       id="linearGradient2072"
+       x1="731.40967"
+       y1="528.37109"
+       x2="731.40967"
+       y2="470.21112"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-2.6068534,-3.6496429)" />
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter4645"
+       x="-0.074246027"
+       y="-0.08611501"
+       width="1.1771954"
+       height="1.2055219">
+      <feFlood
+         flood-opacity="0.501961"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood4635" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite4637" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1.2"
+         result="blur"
+         id="feGaussianBlur4639" />
+      <feOffset
+         dx="1.5"
+         dy="1.5"
+         result="offset"
+         id="feOffset4641" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite4643" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="bg"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g1882"
+       inkscape:label="Logo"
+       transform="translate(-683.67023,-467.33112)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:58.6667px;line-height:0;font-family:'Heiti TC';-inkscape-font-specification:'Heiti TC, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:-5px;word-spacing:0px;display:inline;fill:url(#linearGradient1913);fill-opacity:1;fill-rule:nonzero;stroke:url(#linearGradient2072);stroke-width:2;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4645)"
+         x="684.94342"
+         y="523.72144"
+         id="text1744-1"
+         inkscape:label="IO"><tspan
+           sodipodi:role="line"
+           id="tspan1742-4"
+           x="684.94342"
+           y="523.72144"
+           style="font-size:58.6667px;fill:url(#linearGradient1913);fill-opacity:1;fill-rule:nonzero;stroke:url(#linearGradient2072)">IO</tspan></text>
+    </g>
+  </g>
+</svg>
