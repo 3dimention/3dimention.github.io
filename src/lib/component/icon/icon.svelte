@@ -11,7 +11,7 @@
 
 	export let icon: typeof SvelteComponent;
 	export let size: Sizes = Size.md;
-	export let color: Colors | string = Color.black;
+	export let color: Colors | string = Color.current;
 	export let className = '';
 
 	const baseClasses = `inline-block ${className}`.trim();

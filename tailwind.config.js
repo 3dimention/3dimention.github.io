@@ -41,15 +41,17 @@ export default {
 		},
 		fontFamily: {
 			...defaultTheme.fontFamily,
-			sans: ['Instrument Sans', ...defaultTheme.fontFamily.sans]
+			sans: ['Montserrat', ...defaultTheme.fontFamily.sans],
+			modern: ['Titillium Web', ...defaultTheme.fontFamily.mono]
 		},
 		spacing: {
 			...defaultTheme.spacing,
-			xs: '8px',
-			sm: '16px',
-			md: '24px',
-			lg: '32px',
-			xl: '64px'
+			xs: '1rem',
+			sm: '1.25rem',
+			md: '1.5rem',
+			lg: '2.25rem',
+			xl: '3rem',
+			xxl: '4rem'
 		}
 	}
 };

@@ -31,7 +31,8 @@ export enum Size {
 	sm = 'sm',
 	md = 'md',
 	lg = 'lg',
-	xl = 'xl'
+	xl = 'xl',
+	xxl = 'xxl'
 }
 export type Sizes = keyof typeof Size;
 

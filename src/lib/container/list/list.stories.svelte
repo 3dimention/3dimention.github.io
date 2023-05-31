@@ -32,7 +32,6 @@
 <Story name="Decimal" args={{ style: ListStyle.decimal }} />
 <Story name="Custom">
 	<List
-		style={ListStyle.none}
 		elements={mockListElements}
 		className="inline-flex flex-col items-center"
 		transform={customTransform}

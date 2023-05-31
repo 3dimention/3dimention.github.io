@@ -5,7 +5,7 @@ import { isColor, isColorState } from '$lib/helper/color.helper';
 
 export const textColor = (color: Colors | string): string => {
 	const value = isColor(color) ? TextColors[color] : color;
-	return (isColorState(value) ? value.normal : value) || TextColors.black;
+	return (isColorState(value) ? value.normal : value) || TextColors.current;
 };
 
 export const width = (size: Sizes): string => Width[size] || Width[Size.md];

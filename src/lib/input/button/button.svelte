@@ -40,7 +40,7 @@
 
 <button aria-disabled={disabled} {disabled} class="{baseClasses} {bgc} {tc} {hvc} {p} {fs}" {name} on:click={onClick}>
 	{#if icon && iconAlignment === 'left'}<Icon {icon} color={tc} {size} />{/if}
-	<span class={ip}>{label}</span>
+	<span class={ip}><slot>{label}</slot></span>
 	{#if icon && iconAlignment === 'right'}<Icon {icon} color={tc} {size} />{/if}
 </button>
 
