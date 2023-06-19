@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140" height="30" inkscape:export-xdpi="96" inkscape:export-ydpi="96" inkscape:version="1.2.2 (b0a8486, 2022-12-01)" sodipodi:docname="nahuelio-logo.svg" version="1.1" viewBox="0 0 140 30" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <sodipodi:namedview shape-rendering="auto" bordercolor="#999999" borderopacity="1" inkscape:current-layer="g1882" inkscape:cx="80.450713" inkscape:cy="31.474251" inkscape:deskcolor="#d1d1d1" inkscape:document-units="px" inkscape:lockguides="false" inkscape:pagecheckerboard="false" inkscape:pageopacity="0" inkscape:showpageshadow="false" inkscape:window-height="2107" inkscape:window-maximized="0" inkscape:window-width="3840" inkscape:window-x="-1" inkscape:window-y="25" inkscape:zoom="13.455443" pagecolor="#ffffff" showgrid="false"/>
+ <defs>
+  <linearGradient id="IO" inkscape:collect="always">
+   <stop stop-color="#5bc919" offset="0"/>
+   <stop stop-color="#cce400" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient1913" x1="703.47" x2="703.47" y1="529.08" y2="501.67" gradientTransform="translate(107.76 -30.221)" gradientUnits="userSpaceOnUse" inkscape:collect="always" xlink:href="#IO"/>
+  <linearGradient id="linearGradient4843" x1="731.41" x2="731.41" y1="528.37" y2="494.87" gradientTransform="translate(-5.4791 -29.087)" gradientUnits="userSpaceOnUse" inkscape:collect="always">
+   <stop stop-color="#bebebe" offset="0"/>
+   <stop stop-color="#f0f0f0" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient4845" x1="731.41" x2="731.41" y1="528.37" y2="494.87" gradientTransform="translate(-5.4791 -29.087)" gradientUnits="userSpaceOnUse" inkscape:collect="always">
+   <stop stop-color="#c0c0c0" offset="0"/>
+   <stop stop-color="#f0f0f0" offset="1"/>
+  </linearGradient>
+ </defs>
+ <g inkscape:groupmode="layer" inkscape:label="bg">
+  <g transform="translate(-683.67 -467.33)" font-family="'Heiti TC'" word-spacing="0px" inkscape:label="Logo">
+   <text x="795.31348" y="497.15036" fill="url(#linearGradient1913)" font-size="26.667px" letter-spacing="-1px" stroke="url(#linearGradient1913)" stroke-width="2" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0" inkscape:label="IO" xml:space="preserve"><tspan x="795.31348" y="497.15036" fill="url(#linearGradient1913)" font-size="26.667px" stroke="url(#linearGradient1913)" sodipodi:role="line">IO</tspan></text>
+   <text x="682.07123" y="498.28418" fill="url(#linearGradient4843)" font-size="37.333px" letter-spacing="-2.5px" stroke="url(#linearGradient4845)" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0" inkscape:label="Nahuel" xml:space="preserve"><tspan x="682.07123" y="498.28418" fill="url(#linearGradient4843)" font-size="37.333px" stroke="url(#linearGradient4845)" sodipodi:role="line">nahuel</tspan></text>
+  </g>
+ </g>
+</svg>

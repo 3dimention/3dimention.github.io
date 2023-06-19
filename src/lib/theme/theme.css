@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Titillium+Web:wght@300;400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+main {
+	background-color: theme('colors.baseline');
+	color: theme('colors.white');
+}
