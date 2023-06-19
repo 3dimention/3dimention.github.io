@@ -1,5 +1,6 @@
 /**
  * Theme Configuration
+ * This file will expose most used tailwind utility classes by default.
  */
 import type { Alignments, Axis, Colors, Sizes, StatefulColor, StatefulColors } from '$lib/theme/theme';
 

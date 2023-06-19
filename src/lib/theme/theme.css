@@ -8,29 +8,3 @@ main {
 	background-color: theme('colors.baseline');
 	color: theme('colors.white');
 }
-
-@svg-load logo url(../../../static/images/nahuelio-logo.svg) {
-}
-.logo {
-	background-image: svg-inline(logo);
-	background-position: center center;
-	background-origin: border-box;
-	background-size: 140px 30px;
-	width: 140px;
-	height: 30px;
-	filter: drop-shadow(1px 1px 0px rgb(0 0 0 / 0.35));
-}
-
-.profile-picture {
-	filter: grayscale(100%);
-}
-
-.bg-1 {
-	background-color: #080f45;
-	background-image: linear-gradient(45deg, #080f45 0%, #ed51d6 50%, #ff8fe9 75%, #ffc7f4 100%);
-}
-
-.bg-2 {
-	background: radial-gradient(circle at top, #882b7a, #080f45);
-	/*background: radial-gradient(circle at top, #871d70 , #071a40)*/
-}

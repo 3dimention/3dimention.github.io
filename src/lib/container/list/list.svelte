@@ -9,7 +9,7 @@
 
 	export let elements: ListElement[] = [];
 	export let transform: ListTransform<$$Generic, $$Generic> = (element: $$Generic) => element;
-	export let className = '';
+	export let className = 'inline-block';
 	export let style = ListStyle.none;
 </script>
 

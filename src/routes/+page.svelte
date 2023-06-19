@@ -15,3 +15,9 @@
 		<h1>Home - Content</h1>
 	</div>
 </Layout>
+
+<style>
+	.profile-picture {
+		filter: grayscale(100%);
+	}
+</style>

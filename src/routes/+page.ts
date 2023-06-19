@@ -7,6 +7,6 @@ export const ssr = false;
 /**
  * Top Level Page Data
  */
-export const load: PageLoad = ({}) => {
+export const load: PageLoad = () => {
 	return { navigation };
 };

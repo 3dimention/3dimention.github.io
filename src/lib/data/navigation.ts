@@ -11,7 +11,6 @@ export const navigation: Navigation = {
 	items: [
 		{ id: 1, title: 'Who Am I' },
 		{ id: 2, title: 'What I do' },
-		{ id: 3, title: 'Aspirations' },
-		{ id: 4, title: 'Contact' }
+		{ id: 3, title: 'Contact' }
 	]
 };

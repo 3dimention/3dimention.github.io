@@ -11,7 +11,6 @@
 	import Button from '$lib/input/button/button.svelte';
 
 	export let data: PageData;
-
 	const onMenuClick: MouseEventHandler<EventTarget> = (event) => console.log(event);
 </script>
 
@@ -25,3 +24,17 @@
 		</li>
 	</List>
 </header>
+
+<style>
+	@svg-load logo url(../../../../static/images/nahuelio-logo.svg) {
+	}
+	.logo {
+		background-image: svg-inline(logo);
+		background-position: center center;
+		background-origin: border-box;
+		background-size: 140px 30px;
+		width: 140px;
+		height: 30px;
+		filter: drop-shadow(1px 1px 0px rgb(0 0 0 / 0.35));
+	}
+</style>
